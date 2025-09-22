@@ -4,8 +4,6 @@ This document outlines the steps followed to clean and prepare the sales dataset
 
 ## 1. Handling Missing Values
 - Inspected each column for missing or null values.
-- Replaced missing numeric entries with the **median** of the respective column.
-- Replaced missing categorical values with the **most common category (mode)**.
 - Ensured no essential field contained unaddressed missing values.
 
 ## 2. Removing Duplicates
@@ -17,7 +15,7 @@ This document outlines the steps followed to clean and prepare the sales dataset
 - Converted the **sales date** column to a `datetime` format to facilitate time-based operations.
 
 ## 4. Standardizing Categorical Values
-- Standardized text data in key columns (e.g., `PaymentMethod`, `ProductCategory`):
+- Standardized text data in key columns (e.g., `Payment_Method`, `Product_Category`):
   - Converted all text to consistent cases (lowercase or title case).
   - Trimmed extra spaces.
   - Corrected spelling, formatting, and capitalization inconsistencies.
@@ -33,7 +31,6 @@ This document outlines the steps followed to clean and prepare the sales dataset
 - Used `info()` and `describe()` methods to confirm remaining issues were addressed.
 - Ensured the final dataset is **consistent, accurate, and ready for analysis or visualization** tasks.
 
----
 
-**Outcome:**  
-A cleaned and validated sales dataset ready for reliable analysis, reporting, and visualization.
+
+
